@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table>tbody>tr>th{/*table>tr>th이렇게 쓰면 사용되지 않음.*/
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table border=1><!--tbody를 따로 생성해주지 않아도 생김. 자손선택시 주의해야 함.-->
+        <tr>
+            <th>이름</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <th>이동준</th>
+            <th>대구</th>
+        </tr>
+    </table>
+</body>
+</html>

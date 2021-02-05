@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio src="./Kalimba.mp3" controls></audio><!--controls 옵션을 줘야 재생가능-->
+    
+    <audio controls><!--audio 태그를 쓰는 방법2 (웹브라우저 따라 다르게 설정가능)-->
+        <source src="Kalimba.mp3" type="audio/mp3">
+        <source src="Kalimba.ogg" type="audio/ogg">
+    </audio>
+
+    <!--썸네일 가능 poster이용-->
+    <video src="./Wildlife.mp4" controls muted autoplay></video>
+    <!--자동재생 ; muted autoplay 이용-->
+    <video  poster="../goodweather.jpg"
+            width="300px" height="300px"
+            src="./Wildlife.mp4" controls></video>
+    <video  poster="../goodweather.jpg"
+            width="300px" height="300px" controls>
+        <source src="Wildlife.mp4" type="video/mp4" autocapitalize="">
+        <source src="Wildlife.mp4" type="video/webm">
+    </video>
+    
+</body>
+</html>

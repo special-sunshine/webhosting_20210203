@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1+h2{color:red}/*h1 바로 옆의 h2에 적용*/
+        h1~h2{background-color: pink;}/*h1옆의 h2들에 대해 적용; 동위선택*/
+        h1:hover{color:red;}/*h1 태그에 마우스를 올릴 경우에
+                                color 속성에 red 키워드를 적용*/
+        h1:active{color:blue;}/*h1 태그를 마우스로 클락할 때
+                                color 속성에 blue 키워드를 적용*/
+    </style>
+</head>
+<body>
+    <!--h1{header-1}-->
+    <h1>header-1</h1>
+    <!--h2{header-$}*5-->
+    <h2>header-1</h2>
+    <h2>header-2</h2>
+    <h2>header-3</h2>
+    <h2>header-4</h2>
+    <h2>header-5</h2>
+
+    <h1>User Action Seletor</h1>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=checkbox]:checked+div/*checkbox옆의 아이에게 적용*/
+        {
+            height:0;/*값을 주고 밑의 height 값을 안주면 없다가 나타남*/
+        }
+        div
+        {
+            overflow:hidden;/*크기를 초과하면 숨긴다*/
+            width: 650px; height: 300px;
+            /*변환효과적용: 체크박스 클릭시 사라지는 효과*/
+            -moz-transition-duration: 1s;/*1초동안 바뀐다*/
+            -webkit-transition-duration:1s;
+            -moz-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ad eaque deserunt quaerat, debitis rem odio quibusdam. Aliquid, natus mollitia?</h1>
+        <p>Lorem, ipsum.</p>
+    </div>
+</body>
+</html>

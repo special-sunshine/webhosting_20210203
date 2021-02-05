@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/*순서를 먼저보고 태그를 보라.*/
+        h1:first-of-type{color:red}/*제일 첫번째 h1타입에 무조건 빨간색 색칠*/
+        h1:last-of-type{background-color: pink}/*제일 아래 h1타입에 무조건
+                                                   배경색 적용*/
+    </style>
+</head>
+<body><!--body와 구분되는 div에도 위의 스타일은 적용-->
+    <p>띠용</p>
+    <h1>123456</h1>
+    <h2>123456</h2>
+    <h3>123456</h3>
+    <div>
+        <p>klgjalsdjli</p>
+        <h1>asdf</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, error?</p>
+        <h1>aaa</h1>
+        <p>asdfkljalksfdj</p>
+    </div>
+    <h3>123456</h3>
+    <h3>123456</h3>
+    <h2>123456</h2>
+    <h1>123456</h1>
+    <p>이거 있으면 h1에 핑크배경색 없어짐</p>
+</body>
+</html>

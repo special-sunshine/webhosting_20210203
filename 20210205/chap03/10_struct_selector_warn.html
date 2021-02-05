@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*li>a:first-child{color:red} li태그의 자손인 a태그를, 첫번째 자손을 선택한다.
+                                      전체가 다 빨간색*/
+        li:first-child>a{color:red}/*특정 태그아래 후손 선택*/
+    </style>
+</head>
+<body>
+    <ul>
+        <!-- (li>a[href=#]{abcd})*5 -->
+        <li><a href="#">abcd</a></li><!--제일 첫번째만 빨간색이 되려면?-->
+        <li><a href="#">abcd</a></li>
+        <li><a href="#">abcd</a></li>
+        <li><a href="#">abcd</a></li>
+        <li><a href="#">abcd</a></li>
+    </ul>
+</body>
+</html>
