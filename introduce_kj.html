@@ -5,45 +5,126 @@
     <meta name="viewport" content="width=d, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p{
+        div.left{
+            width:50%;
+            float:left;
+            box-sizing: border-box;            
+        }        
+        h1:hover{color:red}
+        h1:active{color:blue}
+        h3{
             color:royalblue            
         }
-        h1{
-            color:rebeccapurple
+        #aa{
+            background-color: rgba(140, 207, 173, 0.651)
         }
-        
+        .a1{
+            background-color: rgba(0, 0, 255, 0.247);
+        }
+        .a2{
+            color: darkblue
+        }
+        .a3{
+            background-color: rgba(139, 0, 139, 0.397);
+        }
+        tbody {
+            text-align: center;
+        }
+        input[type=checkbox]:checked+div
+        {
+            height:500px;
+        }
+        div.right{
+            width:50%;
+            float:right;
+            box-sizing: border-box;
+           
+        }
+        div.a3
+        {
+            overflow:hidden;
+            width: 300px; height: 0px;
+            -moz-transition-duration: 1s;
+            -webkit-transition-duration:1s;
+            -moz-transition-duration: 1s;
+            transition-duration: 1s;
+        }
     </style>
 </head>
 <body>
     <p style="text-align: center;">
-    <img src="goodweather.jpg" width="300px" height="500px" alt=""></p>
-    <a href="index.html">인덱스로 돌아가기</a>
-    <center>
-    <p>안녕하세요 이기정입니다.</p>
-    <h1>저는 보라색을 좋아하진 않고</h1>
-    <h2><font color="green">초록색</font>을 좋아합니다.</h2>
-    <h2>산과 바다를 좋아하죠!</h2></center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/T2MkuMdzAuw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    </p>
+    <div><center>
+    <h1>안녕하세요</h1>
+    <p>(위 인사말에 커서를 갖다대고 클릭해보세요!)</p>
+    <h3>이기정입니다.</h3>
+    <span>저는 파란색을 좋아하진 않고</span>
+    <span><font size="5", color="green">초록색</font>을 좋아합니다.</span>
+    <p>산과 바다를 좋아하죠!</p></center>
+    </div>
     <br>
     <br>
+    <div class="left">
     <table border="1">
-        <caption>이기정</caption>
-        <thead style="background: green;">
+        <caption><h2>저는 이런 사람입니다.</h2></caption>
+        <thead style="background:rgba(159, 204, 219, 0.61)">
             <tr>
                 <th colspan="4">이 력 사 항</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>이름</td>
+                <td id="aa">이름</td>
                 <td>이기정</td>
-                <td>학력</td>
+                <td id="aa">학력</td>
                 <td>한남대학교 졸업</td>
             </tr>
             <tr>
-                <td>전공</td>
-                <td>정보통신공학<br>문헌정보학</td>
-                <td>자격사항</td>
-                <td>정보처리기사</td>
+                <td id="aa">전공</td>
+                <td colspan="3">정보통신공학 문헌정보학</td>
+            </tr>
+            <tr>
+                <td class="a1 a2", colspan="4"><strong>자 격 사 항</strong></td>
+            </tr>
+            <tr>
+                <td class="a1", colspan="2">취득날짜</td>
+                <td class="a1", colspan="2">자격증명</td>
+            </tr>
+            <tr>
+                <td colspan="2">2011.11</td>
+                <td colspan="2">정보처리기사</td>
+            </tr>
+            <tr>
+                <td colspan="2">2009.08</td>
+                <td colspan="2">운전면허보통1종</td>
+            </tr>
+            <tr>
+                <td colspan="2">2005.12</td>
+                <td colspan="2">컴퓨터활용능력2급</td>
+            </tr>
+            <tr>
+                <td colspan="2">2003.12</td>
+                <td colspan="2">정보기기운용기능사</td>
+            </tr>
+            <tr>
+                <td colspan="2">2003.07</td>
+                <td colspan="2">워드프로세서1급</td>
+            </tr>
+            <tr>
+                <td class="a3 a2", colspan="4"><strong>수 상 사 항</strong></td>
+            </tr>
+            <tr>
+                <td>상훈명</td>
+                <td>수여기관</td>
+                <td>수여자</td>
+                <td>수상내역</td>
+            </tr>
+            <tr>
+                <td>표창장</td>
+                <td>한국전***</td>
+                <td>사장상</td>
+                <td>우수외부인력</td>
             </tr>
         </tbody>
         <tfoot style="background: yellow">
@@ -52,6 +133,20 @@
             </tr>
         </tfoot>
     </table>
-    
+</div>
+    <br>
+    <div class="right">
+        <form method="get">
+            <input type="text" name="search">
+            <input type="submit">
+        </form>
+    <br>   
+    <br>
+    <p>사진입니다.</p>
+    <input type="checkbox">
+    <div class="a3"><img src="goodweather.jpg" width="300px" height="500px" alt=""></div>
+    <br>
+    <a href="index.html">인덱스로 돌아가기</a>
+    </div>
 </body>
 </html>
