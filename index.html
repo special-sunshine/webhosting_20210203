@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/95c03c6743.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei&family=Handlee&family=Single+Day&display=swap" rel="stylesheet">
+    <title>kjlee's home</title>
+    <style>
+        h2{
+            font-family: 'Single Day', cursive;
+        }
+    </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-home fa-3x"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="introduce_kj.html"><i
+                                class="fas fa-female fa-3x"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="project_intro.html"><i
+                                class="fab fa-cuttlefish fa-3x"></i></a>
+                    </li>
+            </div>
+        </div>
+    </nav>
     <div>
         <p style="text-align: center;">
         <img src="seaside.jpg" alt="">
@@ -13,11 +42,56 @@
         <audio src="./20210205/Kalimba.mp3" controls>play the music</audio>
         </p>
     </div>
-    <center>
-    <h1>kjlee's . . . </h1>
-    <a href="introduce_kj.html">INTRODUCE</a><!--외부 링크 걸기-->
+    <div class="container">
+    <h1>kjLee is . . . </h1>
+    <h2>안녕하세요? 이기정입니다.</h2>
+    <h2>이곳은 저를 소개하는 홈페이지입니다.</h2>
+    <h2>HTML5, CSS를 배우고 있습니다.<span style="color:coral">
+        <i class="far fa-smile-wink"></i></span></h2>
+    <h2><span style="color:firebrick">
+        <i class="fas fa-grin-hearts"></i></span>
+        <span style="color:red">
+        <i class="fas fa-grin-hearts"></i></span>
+        God bless you
+        <span style="color:darkblue">
+        <i class="fas fa-praying-hands"></i>
+        <i class="fas fa-bible"></i></span>
+    </h2>
+    <!--<a href="introduce_kj.html">INTRODUCE</a> /*외부 링크 걸기*/
     <br>
-    <a href="project_intro.html">PROJECT LAUGUAGE C</a>
-    </center>
+    <a href="project_intro.html">PROJECT LAUGUAGE C</a>-->
+    </div>
+    <p></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/id/251/500/280" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Who is she?</h5>
+                        <p class="card-text">저에 대해 소개합니다. 제가 궁금하면 클릭하세요!!</p>
+                        <a href="introduce_kj.html" class="btn btn-primary">!! Click Here !!</a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-right: 20px;"></div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="project1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Language C</h5>
+                        <p class="card-text">로또 당첨 확률을 높이는 프로그램을 만들어 보았습니다. </p>
+                        <a href="project_intro.html" class="btn btn-success">!! Click Here !!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
