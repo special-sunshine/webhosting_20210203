@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #opa{
+            background-color: red;
+            opacity: 0.3;/*0.0~1.0까지 있음(투명~불투명)
+                            id가 opa인 아이들 안의 모든 것에 대해 투명도를 조정함*/
+        }
+        #alpha{/*아이디가 알파인 태그 자체의 투명도만 조정함*/
+            background-color:rgba(147, 112, 216, 0.349);
+        }
+    </style>
+</head>
+<body>
+    <div id="opa">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, facilis?</p>
+    </div>
+    <div id="alpha">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, facilis?</p>
+    </div>
+</body>
+</html>

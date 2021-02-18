@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            background: cyan;
+        }
+        div{
+            background:red;
+        }
+        p{
+            background:pink;
+        }
+        #box{/*ID가 박스인 애 옆에 뜸*/
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: mediumblue;
+        }
+        p:nth-of-type(2)/*p 두번째 태그*/
+        {
+            /*완전히 사라져버림*/
+            /* display: none; */
+            visibility:hidden;/*뭔가 빈자리가 있어 보이게 함(해당공간내용만투명하게)*/
+        }
+    </style>
+</head>
+<body>
+    <span>ㅋㅋㅋㅋㅋㅋ</span>
+    <div id="box"><!--블록속성 div, p태그;한 줄을 다 크기 차지-->
+        <span>Lorem, ipsum dolor.</span><!--인라인 태그 ;글자크기만큼만 크기 차지
+                                        / img태그는 인라인블록태그-->
+    </div>
+    <div id="box2">
+        <span>Lorem ipsum dolor sit amet.</span>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet nulla, animi dolorum tenetur cum fugiat esse est praesentium excepturi?</p>
+    <p>Lorem.</p>
+    <p>Lorem, ipsum dolor.</p><!--얘는 사라져서 보이지 않는다.-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum amet dolorum nobis voluptatibus provident facilis.</p>
+</body>
+</html>

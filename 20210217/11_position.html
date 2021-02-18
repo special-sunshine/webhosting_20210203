@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box
+    {   border:10px solid black;
+        width:100px;
+        height:100px;
+    }
+    .red{
+        background-color: red;
+        position: static; /*기본값 left, top 등의 값을 주어도 소용X*/
+        left:50px;
+    }
+    .green{
+        background-color:green;
+        position: relative; /*태그위치를 기점으로 위치이동*/
+        left:50px;/*왼쪽여백 50px*/
+    }
+    .blue{
+        background-color:blue;
+        position: fixed; /*모니터좌측상단~(0,0)기준으로 좌표이동*/
+        left:500px;/*왼쪽에서 500px*/
+        top:500px;/*위쪽에서 500px*/
+    }
+    .pink{
+        background-color: hotpink;
+        position: absolute;/*fixed와 같은 아이인데, 
+                            부모태그를 좌측상단으로 기준, 그 안에서 움직인다.
+                            부모태그가 static이 아닐때. */
+        left: 20px;
+        top: 20px;
+        width:30px;
+        height:30px;
+    }
+    </style>
+</head>
+<body>
+    <!--div.box*4-->
+    <div class="box red"><!--빨간 박스의 값이 static이라서-->
+        <div class="box pink">1</div><!--얘의 값은 빨간애 기준으로 움직이지 않는다.-->
+    </div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box green">
+        <div class="box pink">2</div>
+    </div>
+</body>
+</html>

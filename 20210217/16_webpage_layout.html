@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        /*중앙정렬공식
+        너비 지정하고 margin값을 0 auto로 둔다. */
+        width: 960px;/*Aside와 Section의 width값의 합이 최대가 body width와 같아야 함*/
+        margin: 0 auto;
+    }
+    #Aside{
+        float:left;
+        width: 298px;
+        background: lightseagreen;
+        border:1px solid black;
+    }
+    #Section{
+        float:left;
+        width: 658px;
+        /*float:right;여백*/
+        /*width: 650px;여백*/
+        background: limegreen;
+        border:1px solid black;
+    }
+    #Contents{
+        overflow:hidden;/*섹션별 내용이 적을 때 나타나는 순서가 다른 영역을 침범할 경우...
+        요 아이를 쓰면 Footer가 영역 침범을 하지 않음.*/
+    }    
+    </style>
+</head>
+<body>
+    <div id="Header">
+        <h1>Header</h1>
+    </div>
+    <div id="Navigation">
+        <h1>Navigations</h1>
+    </div>
+    <div id="Contents">
+        <div id="Aside">
+            <h1>Aside</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ad?</p>
+        </div>
+        <div id="Section">
+            <h1>Section</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quidem labore aliquid voluptatem sit beatae, ratione voluptatum iste aspernatur odit excepturi. Inventore non, ipsa a asperiores quis explicabo sapiente animi repudiandae, optio unde iste labore! Aut assumenda, nostrum ab explicabo quibusdam error in quis aperiam tempora voluptate soluta molestias animi. Enim soluta, error asperiores nulla animi ipsum mollitia aperiam ullam consequuntur aut aliquid. Ex cupiditate cumque, officia nihil reprehenderit id nulla fuga accusantium iure? Cum, iusto id quis et recusandae quos molestias sequi minus culpa modi cumque aliquid error. Placeat, praesentium. Veniam nisi modi earum harum maxime dolores a fuga!</p>
+        </div>
+    </div>
+    <div id="Footer">
+        <h1>Footer</h1>
+    </div>
+</body>
+</html>

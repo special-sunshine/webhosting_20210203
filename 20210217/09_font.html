@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{font-size: 32px;}
+        .b{font-size: 2em;}
+        .c{font-size: large;}
+        .d{font-size: small;}
+        .font_roman{font-family: 'Times New Roman';}/*폰트이름에 공백 포함된 경우 ' '사용*/
+        .font_arial{font-family: Arial, Helvetica, sans-serif;}/*폰트이름에 공백X? 그냥 사용가능*/
+                                /*Plan A, Plan B, Plan C 순서대로 적용된다.
+                                세글꼴이 적용X? 해당 PC의 기본폰트로 적용됨*/
+        .font_bold{font-weight: bold;}
+    </style>
+</head>
+<body>
+    <h1>Lorem, ipsum.</h1><!--p태그 2배 굵게!랑 같음-->
+    <p class="a font_roman">Lorem, ipsum dolor.1</p><!--클래스는 여러개 적용이 가능 cf)ID -->
+    <p class="b font_bold">Lorem, ipsum dolor.2</p>
+    <p class="c">Lorem, ipsum dolor.3</p>
+    <p class="d">Lorem, ipsum dolor.4</p>
+</body>
+</html>
