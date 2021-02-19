@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{/*초기화 코드*/
+        margin:0;
+        padding:0;
+        }
+        .container{
+            /*너비 고정 and 중앙 정렬*/
+            width: 960px;
+            margin: 0 auto;
+            padding-top: 10px;
+
+            /*그리드 구성하기~div계산(셀의갯수)을 잘해야 한다.*/
+            display: grid;
+            grid-template: 70px 1fr 70px / 200px 1fr;/*3행 2열*/
+                        /*70px 나머지부분차지 70px*/
+            gap: 5px;
+
+            grid-template-areas:/*naming만으로 공간 할당을 할 수 있음.*/
+            'header header'
+            'aside content'
+            'footer footer';
+        }
+        [class*=cell]
+            {
+                box-sizing: border-box;
+                border: 5px solid black;
+                border-radius: 10px;
+                padding: 20px;
+            }
+        .cell-header{grid-area:header;}
+        .cell-aside{grid-area:aside;}
+        .cell-content{grid-area:content;}
+        .cell-footer{grid-area:footer;}    
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="cell-header">header</div>
+            <div class="cell-aside">aside</div>
+            <div class="cell-content">content</div>
+            <div class="cell-footer">footer</div>
+        </div>
+    </body>
+    </html>

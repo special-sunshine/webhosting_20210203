@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        display: grid;
+        grid-template-columns: 300px 1fr;/*300px는 고정크기, 나머지에 대해서 차지*/
+        grid-template-rows: 1fr 2fr;/*위쪽은 1:아래쪽은2 로 화면분할*/
+        gap:5px;/*여백을 줌, 분할된 cell마다 적용됨*/
+    }
+    [class*=cell]
+        {
+            box-sizing: border-box;
+            border: 5px solid black;
+            border-radius: 10px;
+            padding: 20px;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <!--div.cell{cell}*4-->
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            /*grid-template-row와 column에 대하여 각각 200 200 200 한거와 같다*/
+            grid-template: 200px 200px 200px 200px / 200px 200px 200px 200px;/*'행'과 '열'이다.*/
+            gap: 5px;
+        }
+        [class*=cell] {
+            box-sizing: border-box;
+            border: 5px solid black;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .cell-a{
+            grid-row-start: 1;/*행으로부터 1~5번까지 넓이 차지*/
+            grid-row-end:5;
+            grid-column: 1/3; /*열로부터 시작이 1, 끝이 3. 책 참고 499p*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cell-a">cell a</div><!--얘만 다른 적용.-->
+        <div class="cell">cell b</div>
+        <div class="cell">cell c</div>
+        <div class="cell">cell d</div>
+        <div class="cell">cell e</div>
+        <div class="cell">cell f</div>
+        <div class="cell">cell g</div>
+        <div class="cell">cell h</div>
+        <div class="cell">cell i</div>
+    </div>
+</body>
+
+</html>
