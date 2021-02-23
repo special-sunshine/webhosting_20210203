@@ -2269,94 +2269,101 @@ input, select, textarea {
 		background-position: top left, center center;
 	}
 
+/* Contact */
+
+#contact {
+	overflow: hidden;
+	padding-bottom: 0;
+}
+
+	#contact .box {
+		-moz-transition: -moz-transform 1s ease;
+		-webkit-transition: -webkit-transform 1s ease;
+		-ms-transition: -ms-transform 1s ease;
+		transition: transform 1s ease;
+		-moz-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+		position: relative;
+	}
+
+	#contact.inactive .box {
+		-moz-transform: translateY(100%);
+		-webkit-transform: translateY(100%);
+		-ms-transform: translateY(100%);
+		transform: translateY(100%);
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#contact .box {
+			padding: 1.5em 1.5em 2em 1.5em;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#contact .box {
+			padding: 1em 1em 2em 1em;
+		}
+
+	}
+
+
+		
 	/*kjLee in*/
-	input:nth-of-type(1){
+	input:nth-of-type(1) {
 		display: none;
 	}
-	input:nth-of-type(1)~div:nth-of-type(1){
+
+	input:nth-of-type(1)~div:nth-of-type(1) {
 		display: none;
 	}
-	input:nth-of-type(1):checked~div:nth-of-type(1){
+
+	input:nth-of-type(1):checked~div:nth-of-type(1) {
 		display: block;
 	}
-	input:nth-of-type(2){
+
+	input:nth-of-type(2) {
 		display: none;
 	}
-	input:nth-of-type(2)~div:nth-of-type(2){
+
+	input:nth-of-type(2)~div:nth-of-type(2) {
 		display: none;
 	}
-	input:nth-of-type(2):checked~div:nth-of-type(2){
+
+	input:nth-of-type(2):checked~div:nth-of-type(2) {
 		display: block;
 	}
-	
-	section.buttons{
+
+	section.buttons {
 		overflow: hidden;
 	}
-	
-	section.buttons>label{
+
+	section.buttons>label {
 		display: block;
-		float:left;
+		float: left;
 		width: 100px;
 		height: 30px;
 		line-height: 30px;
 		text-align: center;
-	
-		box-sizing:border-box;
-		border:1px solid black;
-	
+
+		box-sizing: border-box;
+		border: 1px solid black;
+
 		background: black;
-		color:white;
+		color: white;
 	}
-	
-	input:nth-of-type(1):checked ~ section.buttons > label:nth-of-type(1){
+
+	input:nth-of-type(1):checked~section.buttons>label:nth-of-type(1) {
 		background: white;
 		color: black;
 	}
-	
-	input:nth-of-type(2):checked ~ section.buttons > label:nth-of-type(2){
+
+	input:nth-of-type(2):checked~section.buttons>label:nth-of-type(2) {
 		background: white;
 		color: black;
 	}
 	/*kj End*/
-
-/* Contact */
-
-	#contact {
-		overflow: hidden;
-		padding-bottom: 0;
-	}
-
-		#contact .box {
-			-moz-transition: -moz-transform 1s ease;
-			-webkit-transition: -webkit-transform 1s ease;
-			-ms-transition: -ms-transform 1s ease;
-			transition: transform 1s ease;
-			-moz-transform: translateY(0);
-			-webkit-transform: translateY(0);
-			-ms-transform: translateY(0);
-			transform: translateY(0);
-			position: relative;
-		}
-
-		#contact.inactive .box {
-			-moz-transform: translateY(100%);
-			-webkit-transform: translateY(100%);
-			-ms-transform: translateY(100%);
-			transform: translateY(100%);
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#contact .box {
-				padding: 1.5em 1.5em 2em 1.5em;
-			}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#contact .box {
-				padding: 1em 1em 2em 1em;
-			}
-
-		}
