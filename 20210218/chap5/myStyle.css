@@ -81,7 +81,7 @@ img{border: 0;}
 .thumbnail{
     float:left
 }
-.description>strong, .description>p{/*description>p ?
+.description>strong, p{/*description>p ?
                                         (클래스명이 description의 자손인 p에만 적용)
                                       p ? (모든 p태그에 적용됨)*/
     float:left;
@@ -91,6 +91,9 @@ img{border: 0;}
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    /*이것까지 지정*/
+    display:block;
+    width:120px;
 }
 
 #main_footer{
