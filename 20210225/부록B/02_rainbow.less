@@ -1,0 +1,15 @@
+@color:#FF0000;
+@hue:hue(@color);
+@saturation: saturation(@color);
+@lightness:lightness(@color);
+div {height: 5px;}
+@iteration : 37; /*반복 횟수*/
+
+.rainbow-loop(@i) when(@i>0){/*i는 반복자*/
+    div:nth-child(@{i}){
+        background: hsl(@hue+((@i)*10),@saturation,@lightness)
+    }
+    .rainbow-loop((@i)-1)
+}
+.rainbow-loop(@iteration);
+/*최대값*/

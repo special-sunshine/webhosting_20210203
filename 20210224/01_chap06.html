@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--코딩법칙UTF-8, ANSI ... 있음 / 
+                            얘를 지우면 한글이 꺠질 수도 있다(옛웹브라우저...)-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--얘네를 이용해서 모바일화면을 구현할 수 있다.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .icon{/*inline 형식이라, width, heigt가 먹히지 않음.*/
+            display: block;/*세팅> 디스플레이 블록*/
+        }
+        .bg-header_left_button{
+            width: 62px;
+            height: 32px;
+            background: url('css_sprites.png') -1px -1px;/*이미지를 잘라내서 쓰기위해*/
+            /* background: url(css_sprites.png);
+            background-position: -1px -1px;(-1,-1) */
+        }
+        .bg-header_right_button{
+            width: 32px;
+            height: 32px;
+            background: url('css_sprites.png') -65px -1px;
+            /*좌표(-65,-1)아래 해당하는 이미지를 쓰려고*/
+        }
+        /* h1{
+        display: inline;
+        } */
+        #main_header{
+            height: 45px;
+            background: url('header_background.png');
+            /*높이 45px, 너비 1px인 이미지임*/
+        }
+    </style>
+</head>
+<body>
+    <header id="main_header">
+
+    </header>
+    <!-- <h1>따라치지 말라고했지만 따라쳤다</h1> -->
+    <!--i태그(원래 이탤릭체인..)를 이용해서 이미지파일을 올림.
+    엄청나게 많은 이미지를 img src로 올리면 X (과부하걸림)
+    덩어리 하나(각종 이미지를 붙인)의 큰 이미지_스프라이트이미지를
+    불러와서 잘라서 사용함.
+    https://www.toptal.com/developers/css/sprite-generator/ 사이트 이용-->
+    <!-- <i class="icon"></i> width와 height값을 줄 수 있음 -->
+    <i class="icon bg-header_left_button"></i>
+    <i class="icon bg-header_right_button"></i>
+
+</body>
+</html>
